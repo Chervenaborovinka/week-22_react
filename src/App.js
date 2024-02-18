@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Card from './components/Card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Card
+        title="Sonic X"
+        imgLink='./images/sonic.jpg'
+        description="Ежик супер-герой из одноименной японской видео-игры Sega"
+        superPower='Суперсила: скорость'
+      />
+
+      <Card
+        title="Super Man"
+        imgLink='./images/227px-Superman01.jpg'
+        description="Вселенский супер герой из комиксов вселенной DC"
+        superPower='Суперсила: Супер мощь'
+      />
+
+      <Card
+        title="Catwoman"
+        imgLink='./images/Catwoman.jpg'
+        description="Супер героиня из Готэма"
+        superPower='Суперсила: гибкость и хитрость'
+      />
+
+
     </div>
   );
 }
